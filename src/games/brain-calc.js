@@ -13,7 +13,7 @@ const computedAnswer = (action, num1, num2) => {
   }
 };
 
-const getRandomAction = () => {
+const getRandom = () => {
   switch (getRandomInteger(1, 3)) {
     case 1:
       return '+';
@@ -27,7 +27,7 @@ const getRandomAction = () => {
 };
 
 const brainCalc = () => {
-  const action = getRandomAction();
+  const action = getRandom();
   const firstNumber = getRandomInteger(1, 100);
   const secondNumber = getRandomInteger(1, 100);
   const coorectAnswer = computedAnswer(action, firstNumber, secondNumber);
